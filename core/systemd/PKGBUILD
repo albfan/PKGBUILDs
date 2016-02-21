@@ -9,9 +9,7 @@ pkgbase=systemd
 pkgname=('systemd' 'libsystemd' 'systemd-sysvcompat')
 pkgver=229
 pkgrel=2
-#arch=('i686' 'x86_64')
-arch=('armv6h') # Only if build for RASPBERRY PI
-makepkg -si
+arch=('armv6h' 'armv7h')
 url="http://www.freedesktop.org/wiki/Software/systemd"
 makedepends=('acl' 'cryptsetup' 'docbook-xsl' 'gperf' 'lz4' 'xz' 'pam' 'libelf'
              'intltool' 'iptables' 'kmod' 'libcap' 'libidn' 'libgcrypt'
